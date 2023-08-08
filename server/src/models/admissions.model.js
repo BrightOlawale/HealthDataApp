@@ -65,7 +65,7 @@ const Admission = sequelize.define('Admission', {
     }
 },
 {
-    timestamps: false,
+    timestamps: false
 }
 )
 

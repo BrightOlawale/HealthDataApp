@@ -17,6 +17,10 @@ const Diagnosis_ICD = sequelize.define('diagnosis_icd', {
     Icd_Version: {
         type: Sequelize.INTEGER
     },
-})
+},
+{
+    timestamps: false
+}
+)
 
 export default Diagnosis_ICD

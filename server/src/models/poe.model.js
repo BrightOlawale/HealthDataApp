@@ -36,6 +36,10 @@ const Poe = sequelize.define('filtered_poe', {
     Order_Status: {
         type: Sequelize.STRING
     }
-})
+},
+{
+    timestamps: false
+}
+)
 
 export default Poe

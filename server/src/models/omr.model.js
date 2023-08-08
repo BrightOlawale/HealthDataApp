@@ -17,4 +17,8 @@ const Omr = sequelize.define('omr', {
     result_value: {
         type: Sequelize.STRING
     }
-})
+},
+{
+    timestamps: false
+}
+)

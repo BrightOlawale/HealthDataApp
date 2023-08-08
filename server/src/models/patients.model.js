@@ -21,6 +21,10 @@ const Patients = sequelize.define('Patients', {
     Date_of_Death: {
         type: Sequelize.DATE
     }
-})
+},
+{
+    timestamps: false
+}
+)
 
 export default Patients

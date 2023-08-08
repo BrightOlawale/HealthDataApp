@@ -33,6 +33,10 @@ const Emar = sequelize.define('emar_filtered', {
     Schedule_Time: {
         type: Sequelize.TIME
     }
-})
+},
+{
+    timestamps: false
+}
+)
 
 export default Emar
