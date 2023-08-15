@@ -1,4 +1,4 @@
-import sequelize from '../config/db.config'
+import sequelize from '../config/db.config.js'
 import Sequelize from 'sequelize'
 
 const Poe = sequelize.define('filtered_poe', {
