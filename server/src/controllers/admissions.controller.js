@@ -24,4 +24,23 @@ export default class AdmissionsController {
             })
         }
     }
+
+    // Get an admission record by patient id
+    static async getAdmissionByPatientId(req, res) {
+        try {
+            const admission = await Admissions.findOne({
+                where: {
+                    Patient_ID: req.params.patient_id
+                }
+            })
+            res.status(200).json({
+                message: 'Admission fetched successfully',
+                admission: admission
+            })
+        } catch (error) {
+            res.status(500).json({
+                error: error
+            })
+        }
+    }
 }
