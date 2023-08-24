@@ -1,13 +1,11 @@
-import express from 'express';
+import routeSetup from './setup.route.js';
 import AdmissionsController from '../controllers/admissions.controller.js';
 
-
-// Get an instance of Router
-const router = express.Router();
-
 // Route: /api/v1/admissions
-router.get('/', AdmissionsController.getAllAdmissions);
+routeSetup.get('/', AdmissionsController.getAllAdmissions);
+// Route /api/v1/admissions/:id
+routeSetup.get('/:id', AdmissionsController.getAdmissionByPatientId);
 
 // Export the router
-export default router;
+export default routeSetup;
 
